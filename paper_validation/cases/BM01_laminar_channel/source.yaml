@@ -1,0 +1,12 @@
+{
+  "accessed": "2026-07-23",
+  "case_id": "BM01",
+  "facts": {
+    "reference": "analytical plane-Poiseuille profile"
+  },
+  "public_scope": "No private industrial geometry, mesh, solver case/data, restart, ODB, or ProCAST files are included.",
+  "source": "Defined in this work; analytical plane-Poiseuille profile is the reference.",
+  "source_type": "in_work_public_benchmark",
+  "title": "Laminar channel",
+  "url_or_doi": null
+}

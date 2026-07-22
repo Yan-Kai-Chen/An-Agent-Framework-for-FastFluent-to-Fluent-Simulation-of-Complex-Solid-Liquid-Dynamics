@@ -1,0 +1,9 @@
+work_item,status,primary_output,evidence,remaining_action
+        BM01 public case,complete,paper_validation/cases/BM01_laminar_channel,paper_validation/cases/BM01_laminar_channel/expected_results.json,none
+        BM02 public case,complete,paper_validation/cases/BM02_backward_facing_step,paper_validation/cases/BM02_backward_facing_step/expected_results.json,none
+        BM03 public case,complete,paper_validation/cases/BM03_heated_blocked_channel,paper_validation/cases/BM03_heated_blocked_channel/expected_results.json,none
+        BM04 public case,complete,paper_validation/cases/BM04_lid_driven_cavity,paper_validation/cases/BM04_lid_driven_cavity/expected_results.json,none
+        RP01 public case,complete,paper_validation/cases/RP01_ghia_cavity,paper_validation/cases/RP01_ghia_cavity/expected_results.json,none
+        RP02 public case,complete,paper_validation/cases/RP02_dfg_cylinder,paper_validation/cases/RP02_dfg_cylinder/expected_results.json,none
+        Industrial generic methods,complete,paper_validation/industrial_methods,paper_validation/industrial_methods/synthetic_examples/candidates.json,none
+        Metadata and docs,complete,README.md,docs/paper_reproducibility.md,arXiv id pending

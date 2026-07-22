@@ -1,0 +1,13 @@
+{
+  "case_id": "BM03",
+  "derived": {
+    "extension_speedup": 15.355,
+    "speedup": 1.7100311312877736,
+    "wall_time_reduction_percent": 41.521532461989175
+  },
+  "timings": {
+    "agent_route_s": 180.847,
+    "control_route_s": 309.254,
+    "extension_speedup": 15.355
+  }
+}

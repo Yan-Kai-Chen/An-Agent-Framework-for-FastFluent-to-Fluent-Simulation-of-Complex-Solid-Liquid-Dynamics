@@ -1,0 +1,7 @@
+case_id,headline_error,speedup,wall_time_reduction_percent,display_speedup,display_wall_reduction
+BM01,0.008656 outlet-profile RMS,2.595106,61.465924,>2.595x,>61.47%
+BM02,0.168% reattachment deviation,2.654825,62.332727,2.655x,62.33%
+BM03,0.1956% front error,1.710031,41.521532,1.710x,41.52%
+BM04,0.003452 Ghia centreline RMS,1.283428,22.083689,1.283x,22.08%
+RP01,0.0095285 corrected mean RMS,2.512007,60.191201,2.512x,60.19%
+RP02,0.672% Strouhal error,2.037205,50.913126,2.037x confirmation-stage,50.91%

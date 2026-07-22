@@ -1,0 +1,17 @@
+{
+  "candidate_policy": "public deterministic candidate set",
+  "case_id": "RP02",
+  "evidence_outputs": [
+    "campaign.json",
+    "qoi.json",
+    "readiness.json",
+    "diagnostics.json",
+    "cost.json",
+    "evidence_bundle.json",
+    "agent_decision.json",
+    "promotion_manifest.json",
+    "discrepancy.json",
+    "result_pack.json"
+  ],
+  "promotion_policy": "promote candidate(s) satisfying readiness, QoI, and cost gates"
+}

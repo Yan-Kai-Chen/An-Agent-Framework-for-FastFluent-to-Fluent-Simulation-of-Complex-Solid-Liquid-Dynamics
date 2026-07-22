@@ -1,0 +1,18 @@
+{
+  "accessed": "2026-07-23",
+  "case_id": "RP02",
+  "facts": {
+    "Re": 100,
+    "cylinder_diameter_m": 0.1,
+    "density_kg_m3": 1.0,
+    "domain_height_m": 0.41,
+    "kinematic_viscosity_m2_s": 0.001,
+    "maximum_inlet_velocity_m_s": 1.5,
+    "mean_inlet_velocity_m_s": 1.0
+  },
+  "public_scope": "No private industrial geometry, mesh, solver case/data, restart, ODB, or ProCAST files are included.",
+  "source": "M. Schaefer et al., Benchmark computations of laminar flow around a cylinder (1996).",
+  "source_type": "external_reference",
+  "title": "Schaefer-Turek cylinder reproduction",
+  "url_or_doi": "https://doi.org/10.1007/978-3-322-89849-4_39"
+}

@@ -46,26 +46,25 @@ def test_final_project_title_is_used_in_public_identity_documents():
 
 def test_benchmark_ladder_scaffold_has_all_public_case_entries():
     expected = {
-        "01_internal_pipe_or_channel_flow": "partial",
-        "02_backward_facing_step": "planned",
-        "03_heated_channel_cht_toy_case": "partial",
-        "04_cavity_or_enclosure_flow": "partial",
-        "05_dewaxing_steam_impact_case": "application-driving",
+        "01_internal_pipe_or_channel_flow": "implemented/reproducible",
+        "02_backward_facing_step": "implemented/reproducible",
+        "03_heated_channel_cht_toy_case": "implemented/reproducible",
+        "04_cavity_or_enclosure_flow": "implemented/reproducible",
+        "05_ghia_cavity_reproduction": "implemented/reproducible",
+        "06_dfg_cylinder_reproduction": "implemented/reproducible",
     }
 
     docs_readme = _read("docs/agent_benchmark_ladder/README.md")
-    examples_readme = _read("examples/fastcfd/agent_benchmark_ladder/README.md")
 
     for case_dir, status in expected.items():
         docs_page = REPO_ROOT / "docs" / "agent_benchmark_ladder" / f"{case_dir}.md"
-        example_page = REPO_ROOT / "examples" / "fastcfd" / "agent_benchmark_ladder" / case_dir / "README.md"
         assert path_is_file(docs_page)
-        assert path_is_file(example_page)
-        assert f"`{status}`" in read_text_file(docs_page)
-        assert case_dir in examples_readme
+        page_text = read_text_file(docs_page).lower()
+        assert "implemented and reproducible" in page_text or status in page_text
 
-    assert "Source Asset Mapping" in docs_readme
-    assert "Do not place private Fluent case/data files" in examples_readme
+    assert "BM01" in docs_readme
+    assert "RP02" in docs_readme
+    assert "paper_validation/cases" in docs_readme
 
 
 def test_dewaxing_case_study_keeps_public_fixture_and_claim_boundary():

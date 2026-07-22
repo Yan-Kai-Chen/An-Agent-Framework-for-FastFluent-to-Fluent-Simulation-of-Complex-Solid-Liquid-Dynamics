@@ -1,33 +1,32 @@
-# Benchmark 4: Cavity / Enclosure Flow
+# BM04 Lid-driven cavity
 
-Status: `partial`
+Two-dimensional lid-driven cavity at Re=100.
 
-## Purpose
+## Status
 
-Validate closed-domain recirculating flow behavior and stable bounded-domain
-workflow output.
+Implemented and reproducible in the public `paper_validation` layer.
 
-## Planned QoIs
+## Source
 
-- Vortex center or recirculation proxy.
-- Maximum velocity.
-- Kinetic-energy trend.
-- Stability flag.
-- Mesh sensitivity.
+Standard cavity benchmark with Ghia et al. 1982 centreline references.
 
-## Likely Reusable Assets
+## Frozen Paper Values
 
-- `mock_cavity2d`
-- FastFluent cavity route
+- Headline error: `0.003452 Ghia centreline RMS`
+- Speedup: `1.283x`
+- Wall-time reduction: `22.08%`
 
-## Missing Work
+## Public Route
 
-- Decide whether this remains a simple cavity benchmark or becomes an enclosure
-  natural-convection toy case.
-- Package public benchmark output.
-- Add figure and table definitions.
-- Add tests for the benchmark manifest.
+The case directory is
+`paper_validation/cases/BM04_lid_driven_cavity`. Level 1 checks read the frozen
+JSON outputs. Level 2 reruns the public FastFluent/Agent route. Level 3
+provides optional Fluent-confirmation scripts for users with a licensed
+Fluent installation.
 
-## Paper Role
+## Public-Scope Guard
 
-General capability benchmark, likely supplement or compact main-text table.
+This page documents the public benchmark contract only. It does not publish
+private industrial CAD, private meshes, commercial solver case/data files,
+restart trees, real dewaxing outlet coordinates, or production process
+records.

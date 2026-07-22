@@ -1,0 +1,30 @@
+{
+  "agent_workflow": [
+    "build candidate set",
+    "run FastFluent/public surrogate screen",
+    "evaluate readiness and QoI gates",
+    "promote confirmation candidate(s)",
+    "write EvidenceBundle-compatible frozen outputs"
+  ],
+  "case_id": "BM03",
+  "inputs": {
+    "boundary_conditions": "specified in README and source.yaml",
+    "commercial_solver": "optional Fluent confirmation only",
+    "geometry": "public deterministic definition or public reference mesh/generator"
+  },
+  "physics": "Transient thermal transport through a blocked/porosity-mapped channel.",
+  "required_outputs": [
+    "campaign.json",
+    "qoi.json",
+    "readiness.json",
+    "diagnostics.json",
+    "cost.json",
+    "evidence_bundle.json",
+    "agent_decision.json",
+    "promotion_manifest.json",
+    "discrepancy.json",
+    "result_pack.json"
+  ],
+  "source": "Defined in this work as a public thermal-transport benchmark.",
+  "title": "Heated blocked channel"
+}

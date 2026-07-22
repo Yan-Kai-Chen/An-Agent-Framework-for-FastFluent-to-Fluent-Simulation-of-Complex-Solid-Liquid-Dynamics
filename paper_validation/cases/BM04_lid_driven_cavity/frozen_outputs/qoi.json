@@ -1,0 +1,23 @@
+{
+  "case_id": "BM04",
+  "derived": {
+    "speedup": 1.2834283249638005,
+    "wall_time_reduction_percent": 22.083689400558836
+  },
+  "notes": [
+    "FastFluent screens n80, n100, and n120, and promotes n100.",
+    "The frozen handoff preserves the full 10000-cell velocity field summary without shipping large field dumps."
+  ],
+  "qoi": {
+    "ghia_centreline_rms": 0.003452,
+    "handoff_nrmse": 5.257e-16,
+    "handoff_velocity_field_cells": 10000,
+    "matched_fluent_velocity_nrmse": 2.03e-07,
+    "selected_candidate": "n100",
+    "vortex_centre_distance": 0.006261
+  },
+  "timings": {
+    "agent_route_s": 162.295,
+    "control_route_s": 208.294
+  }
+}

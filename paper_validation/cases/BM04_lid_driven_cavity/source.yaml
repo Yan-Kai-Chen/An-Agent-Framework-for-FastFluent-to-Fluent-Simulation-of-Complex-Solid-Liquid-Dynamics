@@ -1,0 +1,13 @@
+{
+  "accessed": "2026-07-23",
+  "case_id": "BM04",
+  "facts": {
+    "Re": 100,
+    "profile_reference": "Ghia et al. 1982"
+  },
+  "public_scope": "No private industrial geometry, mesh, solver case/data, restart, ODB, or ProCAST files are included.",
+  "source": "Standard cavity benchmark with Ghia et al. 1982 centreline references.",
+  "source_type": "external_reference",
+  "title": "Lid-driven cavity",
+  "url_or_doi": "https://doi.org/10.1016/0021-9991(82)90058-4"
+}

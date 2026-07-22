@@ -1,0 +1,30 @@
+{
+  "agent_workflow": [
+    "build candidate set",
+    "run FastFluent/public surrogate screen",
+    "evaluate readiness and QoI gates",
+    "promote confirmation candidate(s)",
+    "write EvidenceBundle-compatible frozen outputs"
+  ],
+  "case_id": "BM02",
+  "inputs": {
+    "boundary_conditions": "specified in README and source.yaml",
+    "commercial_solver": "optional Fluent confirmation only",
+    "geometry": "public deterministic definition or public reference mesh/generator"
+  },
+  "physics": "SSTm turbulent 2D backward-facing-step separated flow.",
+  "required_outputs": [
+    "campaign.json",
+    "qoi.json",
+    "readiness.json",
+    "diagnostics.json",
+    "cost.json",
+    "evidence_bundle.json",
+    "agent_decision.json",
+    "promotion_manifest.json",
+    "discrepancy.json",
+    "result_pack.json"
+  ],
+  "source": "AIAA Turbulence Model Benchmarking Working Group / NASA Turbulence Modeling Resource.",
+  "title": "Backward-facing step"
+}

@@ -1,0 +1,11 @@
+{
+  "required": [
+    "case_id",
+    "title",
+    "source_type",
+    "source",
+    "accessed",
+    "facts"
+  ],
+  "type": "object"
+}

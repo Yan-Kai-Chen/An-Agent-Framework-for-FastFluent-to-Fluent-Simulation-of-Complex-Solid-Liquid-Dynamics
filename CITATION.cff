@@ -1,21 +1,33 @@
 cff-version: 1.2.0
 message: "If you use this framework in academic work, please cite it using this metadata."
 title: "An Agent Framework for FastFluent-to-Fluent Simulation of Complex Solid-Liquid Dynamics"
-version: "0.2.0"
-date-released: "2026-06-12"
+version: "0.3.0-preprint"
+date-released: "2026-07-23"
 authors:
-  - name: "Project Contributors"
+  - family-names: "Chen"
+    given-names: "YanKai"
+    email: "chenyankai02@gmail.com"
+    affiliation: "School of Materials Science and Engineering, Tsinghua University, Beijing, China"
+  - family-names: "Yuan"
+    given-names: "Man"
+    affiliation: "School of Materials Science and Engineering, Tsinghua University, Beijing, China"
+  - family-names: "Zou"
+    given-names: "Ting"
+    affiliation: "School of Materials Science and Engineering, Tsinghua University, Beijing, China"
+  - family-names: "Xu"
+    given-names: "QingYan"
+    email: "scjxqy@tsinghua.edu.cn"
+    affiliation: "School of Materials Science and Engineering, Tsinghua University, Beijing, China"
+  - family-names: "Jing"
+    given-names: "Tao"
+    email: "jingtao@mail.tsinghua.edu.cn"
+    affiliation: "School of Materials Science and Engineering, Tsinghua University, Beijing, China"
 license: "Apache-2.0"
-repository-code: "https://github.com/Yan-Kai-Chen/CAD-to-CFD-Agent-for-Solid-Liquid-Two-Phase-Flow-Dynamics"
+repository-code: "https://github.com/Yan-Kai-Chen/An-Agent-Framework-for-FastFluent-to-Fluent-Simulation-of-Complex-Solid-Liquid-Dynamics"
 keywords:
-  - CAD
-  - CFD
-  - SolidWorks
-  - Siemens NX
-  - FreeCAD
-  - Open CASCADE Technology
+  - FastFluent
   - Fluent
-  - reverse modeling
-  - solid-liquid two-phase flow
-  - flow dynamics
-  - agentic automation
+  - CFD
+  - agent
+  - solid-liquid dynamics
+  - paper reproducibility

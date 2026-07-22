@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "pressure_pa": {
+      "type": "array"
+    },
+    "temperature_k": {
+      "type": "array"
+    },
+    "time_s": {
+      "type": "array"
+    },
+    "volume_m3": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "time_s",
+    "pressure_pa",
+    "temperature_k",
+    "volume_m3"
+  ],
+  "type": "object"
+}

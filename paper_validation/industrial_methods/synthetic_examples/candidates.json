@@ -1,0 +1,17 @@
+[
+  {
+    "candidate": "synthetic_A",
+    "drainage": 0.75,
+    "fracture_safety": 0.82
+  },
+  {
+    "candidate": "synthetic_B",
+    "drainage": 0.89,
+    "fracture_safety": 0.58
+  },
+  {
+    "candidate": "synthetic_C",
+    "drainage": 0.68,
+    "fracture_safety": 0.91
+  }
+]

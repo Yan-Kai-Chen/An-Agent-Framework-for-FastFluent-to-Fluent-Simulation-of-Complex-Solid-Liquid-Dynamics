@@ -1,0 +1,12 @@
+{
+  "accessed": "2026-07-23",
+  "case_id": "BM03",
+  "facts": {
+    "reference": "continuous-porosity high-resolution public reference generator"
+  },
+  "public_scope": "No private industrial geometry, mesh, solver case/data, restart, ODB, or ProCAST files are included.",
+  "source": "Defined in this work as a public thermal-transport benchmark.",
+  "source_type": "in_work_public_benchmark",
+  "title": "Heated blocked channel",
+  "url_or_doi": null
+}

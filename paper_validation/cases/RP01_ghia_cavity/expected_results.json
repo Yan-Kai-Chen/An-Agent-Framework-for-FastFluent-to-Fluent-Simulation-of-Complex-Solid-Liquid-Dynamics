@@ -1,0 +1,30 @@
+{
+  "case_id": "RP01",
+  "derived": {
+    "speedup": 2.512007478618982,
+    "wall_time_reduction_percent": 60.19120131960089
+  },
+  "display": {
+    "headline_error": "0.0095285 corrected mean RMS",
+    "headline_speedup": "2.512x",
+    "wall_time_reduction": "60.19%"
+  },
+  "qoi": {
+    "baseline_boundary_corrected_mean_rms": 0.120715,
+    "candidate_count": 9,
+    "corrected_mean_rms": 0.0095285,
+    "error_reduction_percent": 92.11,
+    "promoted_anchor_count": 3
+  },
+  "timings": {
+    "agent_route_s": 158.318,
+    "control_route_s": 397.696,
+    "fastfluent_screen_s": 23.386
+  },
+  "title": "Ghia cavity reproduction",
+  "tolerances": {
+    "default_abs": 5e-06,
+    "percent_abs": 0.005,
+    "timing_abs_s": 0.005
+  }
+}

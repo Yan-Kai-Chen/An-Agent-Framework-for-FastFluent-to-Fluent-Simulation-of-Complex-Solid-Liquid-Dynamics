@@ -1,0 +1,31 @@
+{
+  "case_id": "BM02",
+  "derived": {
+    "speedup": 2.654824509919005,
+    "wall_time_reduction_percent": 62.332726842630024
+  },
+  "display": {
+    "headline_error": "0.168% reattachment deviation",
+    "headline_speedup": "2.655x",
+    "wall_time_reduction": "62.33%"
+  },
+  "qoi": {
+    "continuation_checkpoints": 26,
+    "continuation_max_xr_over_h": 7.122,
+    "continuation_min_xr_over_h": 4.576,
+    "deviation_percent": 0.168,
+    "reference_xr_over_h": 6.5,
+    "selected_xr_over_h": 6.489
+  },
+  "timings": {
+    "agent_route_s": 170.38,
+    "control_route_s": 452.329,
+    "fastfluent_screen_s": 25.629
+  },
+  "title": "Backward-facing step",
+  "tolerances": {
+    "default_abs": 5e-06,
+    "percent_abs": 0.005,
+    "timing_abs_s": 0.005
+  }
+}

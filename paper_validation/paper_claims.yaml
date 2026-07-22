@@ -1,0 +1,542 @@
+[
+  {
+    "case_id": "BM01",
+    "claim_id": "BM01_FASTFLUENT_L2_COARSE",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "fastfluent_l2_error_coarse",
+    "rebuild_command": "python paper_validation/cases/BM01_laminar_channel/postprocess.py --frozen",
+    "reported_value": 0.0278,
+    "source_files": [
+      "cases/BM01_laminar_channel/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM01",
+    "claim_id": "BM01_FASTFLUENT_L2_FINE",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "fastfluent_l2_error_fine",
+    "rebuild_command": "python paper_validation/cases/BM01_laminar_channel/postprocess.py --frozen",
+    "reported_value": 0.000434,
+    "source_files": [
+      "cases/BM01_laminar_channel/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM01",
+    "claim_id": "BM01_PROFILE_RMS",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "fluent_outlet_profile_rms",
+    "rebuild_command": "python paper_validation/cases/BM01_laminar_channel/postprocess.py --frozen",
+    "reported_value": 0.008656,
+    "source_files": [
+      "cases/BM01_laminar_channel/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM01",
+    "claim_id": "BM01_MASS_IMBALANCE",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "fluent_mass_imbalance_fraction",
+    "rebuild_command": "python paper_validation/cases/BM01_laminar_channel/postprocess.py --frozen",
+    "reported_value": 1.21e-07,
+    "source_files": [
+      "cases/BM01_laminar_channel/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM01",
+    "claim_id": "BM01_SPEEDUP",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "speedup",
+    "rebuild_command": "python paper_validation/cases/BM01_laminar_channel/postprocess.py --frozen",
+    "reported_value": 2.59510572166528,
+    "source_files": [
+      "cases/BM01_laminar_channel/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 0.005,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM01",
+    "claim_id": "BM01_WALL_REDUCTION",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "wall_time_reduction_percent",
+    "rebuild_command": "python paper_validation/cases/BM01_laminar_channel/postprocess.py --frozen",
+    "reported_value": 61.465924426450734,
+    "source_files": [
+      "cases/BM01_laminar_channel/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 0.05,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM02",
+    "claim_id": "BM02_SELECTED_XR",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "selected_xr_over_h",
+    "rebuild_command": "python paper_validation/cases/BM02_backward_facing_step/postprocess.py --frozen",
+    "reported_value": 6.489,
+    "source_files": [
+      "cases/BM02_backward_facing_step/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM02",
+    "claim_id": "BM02_XR_DEVIATION",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "deviation_percent",
+    "rebuild_command": "python paper_validation/cases/BM02_backward_facing_step/postprocess.py --frozen",
+    "reported_value": 0.168,
+    "source_files": [
+      "cases/BM02_backward_facing_step/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM02",
+    "claim_id": "BM02_CONTINUATION_MIN",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "continuation_min_xr_over_h",
+    "rebuild_command": "python paper_validation/cases/BM02_backward_facing_step/postprocess.py --frozen",
+    "reported_value": 4.576,
+    "source_files": [
+      "cases/BM02_backward_facing_step/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM02",
+    "claim_id": "BM02_CONTINUATION_MAX",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "continuation_max_xr_over_h",
+    "rebuild_command": "python paper_validation/cases/BM02_backward_facing_step/postprocess.py --frozen",
+    "reported_value": 7.122,
+    "source_files": [
+      "cases/BM02_backward_facing_step/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM02",
+    "claim_id": "BM02_SPEEDUP",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "speedup",
+    "rebuild_command": "python paper_validation/cases/BM02_backward_facing_step/postprocess.py --frozen",
+    "reported_value": 2.654824509919005,
+    "source_files": [
+      "cases/BM02_backward_facing_step/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 0.005,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM02",
+    "claim_id": "BM02_WALL_REDUCTION",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "wall_time_reduction_percent",
+    "rebuild_command": "python paper_validation/cases/BM02_backward_facing_step/postprocess.py --frozen",
+    "reported_value": 62.332726842630024,
+    "source_files": [
+      "cases/BM02_backward_facing_step/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 0.05,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM03",
+    "claim_id": "BM03_FRONT_ERROR",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "corrected_mapping_front_error_percent",
+    "rebuild_command": "python paper_validation/cases/BM03_heated_blocked_channel/postprocess.py --frozen",
+    "reported_value": 0.1956,
+    "source_files": [
+      "cases/BM03_heated_blocked_channel/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM03",
+    "claim_id": "BM03_DOSE_ERROR",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "blocked_zone_dose_error_percent",
+    "rebuild_command": "python paper_validation/cases/BM03_heated_blocked_channel/postprocess.py --frozen",
+    "reported_value": 0.5847,
+    "source_files": [
+      "cases/BM03_heated_blocked_channel/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM03",
+    "claim_id": "BM03_EXTENSION_SPEEDUP",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "extension_speedup",
+    "rebuild_command": "python paper_validation/cases/BM03_heated_blocked_channel/postprocess.py --frozen",
+    "reported_value": 15.355,
+    "source_files": [
+      "cases/BM03_heated_blocked_channel/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM03",
+    "claim_id": "BM03_EXTENSION_FIELD_NRMSE",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "extension_field_nrmse_per_100k_percent",
+    "rebuild_command": "python paper_validation/cases/BM03_heated_blocked_channel/postprocess.py --frozen",
+    "reported_value": 0.67613,
+    "source_files": [
+      "cases/BM03_heated_blocked_channel/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM03",
+    "claim_id": "BM03_SPEEDUP",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "speedup",
+    "rebuild_command": "python paper_validation/cases/BM03_heated_blocked_channel/postprocess.py --frozen",
+    "reported_value": 1.7100311312877736,
+    "source_files": [
+      "cases/BM03_heated_blocked_channel/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 0.005,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM03",
+    "claim_id": "BM03_WALL_REDUCTION",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "wall_time_reduction_percent",
+    "rebuild_command": "python paper_validation/cases/BM03_heated_blocked_channel/postprocess.py --frozen",
+    "reported_value": 41.521532461989175,
+    "source_files": [
+      "cases/BM03_heated_blocked_channel/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 0.05,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM04",
+    "claim_id": "BM04_HANDOFF_NRMSE",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "handoff_nrmse",
+    "rebuild_command": "python paper_validation/cases/BM04_lid_driven_cavity/postprocess.py --frozen",
+    "reported_value": 5.257e-16,
+    "source_files": [
+      "cases/BM04_lid_driven_cavity/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM04",
+    "claim_id": "BM04_GHIA_RMS",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "ghia_centreline_rms",
+    "rebuild_command": "python paper_validation/cases/BM04_lid_driven_cavity/postprocess.py --frozen",
+    "reported_value": 0.003452,
+    "source_files": [
+      "cases/BM04_lid_driven_cavity/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM04",
+    "claim_id": "BM04_VORTEX_DISTANCE",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "vortex_centre_distance",
+    "rebuild_command": "python paper_validation/cases/BM04_lid_driven_cavity/postprocess.py --frozen",
+    "reported_value": 0.006261,
+    "source_files": [
+      "cases/BM04_lid_driven_cavity/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM04",
+    "claim_id": "BM04_FLUENT_NRMSE",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "matched_fluent_velocity_nrmse",
+    "rebuild_command": "python paper_validation/cases/BM04_lid_driven_cavity/postprocess.py --frozen",
+    "reported_value": 2.03e-07,
+    "source_files": [
+      "cases/BM04_lid_driven_cavity/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM04",
+    "claim_id": "BM04_SPEEDUP",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "speedup",
+    "rebuild_command": "python paper_validation/cases/BM04_lid_driven_cavity/postprocess.py --frozen",
+    "reported_value": 1.2834283249638005,
+    "source_files": [
+      "cases/BM04_lid_driven_cavity/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 0.005,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "BM04",
+    "claim_id": "BM04_WALL_REDUCTION",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "wall_time_reduction_percent",
+    "rebuild_command": "python paper_validation/cases/BM04_lid_driven_cavity/postprocess.py --frozen",
+    "reported_value": 22.083689400558836,
+    "source_files": [
+      "cases/BM04_lid_driven_cavity/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 0.05,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "RP01",
+    "claim_id": "RP01_BASELINE_RMS",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "baseline_boundary_corrected_mean_rms",
+    "rebuild_command": "python paper_validation/cases/RP01_ghia_cavity/postprocess.py --frozen",
+    "reported_value": 0.120715,
+    "source_files": [
+      "cases/RP01_ghia_cavity/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "RP01",
+    "claim_id": "RP01_CORRECTED_RMS",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "corrected_mean_rms",
+    "rebuild_command": "python paper_validation/cases/RP01_ghia_cavity/postprocess.py --frozen",
+    "reported_value": 0.0095285,
+    "source_files": [
+      "cases/RP01_ghia_cavity/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "RP01",
+    "claim_id": "RP01_ERROR_REDUCTION",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "error_reduction_percent",
+    "rebuild_command": "python paper_validation/cases/RP01_ghia_cavity/postprocess.py --frozen",
+    "reported_value": 92.11,
+    "source_files": [
+      "cases/RP01_ghia_cavity/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "RP01",
+    "claim_id": "RP01_SPEEDUP",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "speedup",
+    "rebuild_command": "python paper_validation/cases/RP01_ghia_cavity/postprocess.py --frozen",
+    "reported_value": 2.512007478618982,
+    "source_files": [
+      "cases/RP01_ghia_cavity/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 0.005,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "RP01",
+    "claim_id": "RP01_WALL_REDUCTION",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "wall_time_reduction_percent",
+    "rebuild_command": "python paper_validation/cases/RP01_ghia_cavity/postprocess.py --frozen",
+    "reported_value": 60.19120131960089,
+    "source_files": [
+      "cases/RP01_ghia_cavity/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 0.05,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "RP02",
+    "claim_id": "RP02_SELECTED_ST",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "selected_frequency_confirmation_st",
+    "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
+    "reported_value": 0.29985,
+    "source_files": [
+      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "RP02",
+    "claim_id": "RP02_SELECTED_ST_ERROR",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "selected_frequency_error_percent",
+    "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
+    "reported_value": 0.672,
+    "source_files": [
+      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "RP02",
+    "claim_id": "RP02_AMPLITUDE_HARDENED_ST",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "amplitude_hardened_st",
+    "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
+    "reported_value": 0.29994,
+    "source_files": [
+      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "RP02",
+    "claim_id": "RP02_MEAN_DRAG_ERROR",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "mean_drag_error_percent",
+    "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
+    "reported_value": 2.552,
+    "source_files": [
+      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+    ],
+    "source_section": "qoi",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "RP02",
+    "claim_id": "RP02_COMPLETE_ROUTE_SPEEDUP",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "complete_route_speedup",
+    "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
+    "reported_value": 1.163,
+    "source_files": [
+      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 5e-06,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "RP02",
+    "claim_id": "RP02_SPEEDUP",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "speedup",
+    "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
+    "reported_value": 2.037204506659699,
+    "source_files": [
+      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 0.005,
+    "units": "dimensionless"
+  },
+  {
+    "case_id": "RP02",
+    "claim_id": "RP02_WALL_REDUCTION",
+    "manuscript_location": "Results / Figure 3 / Table 1 / Supplementary Tables",
+    "quantity": "wall_time_reduction_percent",
+    "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
+    "reported_value": 50.913126456820514,
+    "source_files": [
+      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+    ],
+    "source_section": "derived",
+    "status": "reproduced",
+    "tolerance": 0.05,
+    "units": "dimensionless"
+  }
+]

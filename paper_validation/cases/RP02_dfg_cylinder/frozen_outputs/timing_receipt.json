@@ -1,0 +1,13 @@
+{
+  "case_id": "RP02",
+  "derived": {
+    "complete_route_speedup": 1.163,
+    "speedup": 2.037204506659699,
+    "wall_time_reduction_percent": 50.913126456820514
+  },
+  "timings": {
+    "agent_continuation_s": 639.143,
+    "complete_route_speedup": 1.163,
+    "control_route_s": 1302.065
+  }
+}

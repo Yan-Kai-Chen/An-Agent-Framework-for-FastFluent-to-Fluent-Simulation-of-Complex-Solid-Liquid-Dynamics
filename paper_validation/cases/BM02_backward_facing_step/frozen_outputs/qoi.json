@@ -1,0 +1,24 @@
+{
+  "case_id": "BM02",
+  "derived": {
+    "speedup": 2.654824509919005,
+    "wall_time_reduction_percent": 62.332726842630024
+  },
+  "notes": [
+    "The source identity records Re_H=36000, reference Mach 0.128, Re_theta=5000, and matched SSTm x_r/H=6.50.",
+    "Continuation history spans 26 checkpoints and triggers diagnostic return."
+  ],
+  "qoi": {
+    "continuation_checkpoints": 26,
+    "continuation_max_xr_over_h": 7.122,
+    "continuation_min_xr_over_h": 4.576,
+    "deviation_percent": 0.168,
+    "reference_xr_over_h": 6.5,
+    "selected_xr_over_h": 6.489
+  },
+  "timings": {
+    "agent_route_s": 170.38,
+    "control_route_s": 452.329,
+    "fastfluent_screen_s": 25.629
+  }
+}

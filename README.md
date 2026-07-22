@@ -1,130 +1,76 @@
 # An Agent Framework for FastFluent-to-Fluent Simulation of Complex Solid-Liquid Dynamics
 
-This repository is the public software workspace for **An Agent Framework for
-FastFluent-to-Fluent Simulation of Complex Solid-Liquid Dynamics**.
+This repository contains the public code and validation assets for
+**An Agent Framework for FastFluent-to-Fluent Simulation of Complex
+Solid-Liquid Dynamics**.
 
-The Python package is still named `fromcad2cfd`. It provides auditable,
-agent-assisted workflows for CAD preparation, fast CFD evidence generation,
-Fluent setup planning, and post-run interpretation.
+The project exposes FastFluent core workflows, Agent route selection,
+evidence bundles, and paper-facing CFD validation cases. It is designed
+to make numerical claims traceable without publishing private industrial
+CAD, meshes, commercial solver models, restart trees, or production
+process data.
 
-The project does not replace SolidWorks, Siemens NX, HyperMesh, or ANSYS
-Fluent. It keeps the agent layer explicit: every important step writes inputs,
-checks, reports, and decision artifacts before moving to a higher-cost stage.
-
-## Workflow Blocks
-
-| Block | Purpose | Typical output |
-| --- | --- | --- |
-| `Modeling` | Prepare CAD geometry through bounded SolidWorks, NX, and mesh-solidification workflows. | Repaired/copied solids, export reports, geometry checks. |
-| `FastFluent` | Generate fast native CFD evidence before full Fluent work. | Physics passports, Result Packs, QoIs, agent decisions. |
-| `Meshing` | Validate meshing plans and controlled local meshing adapters. | Mesh preflight reports and adapter-safe plans. |
-| `Fluent` | Validate Fluent setup contracts and summarize Fluent-side results. | Solver-plan checks, patch previews, monitor summaries, handoff reports. |
-
-## Start Here
-
-Install for local development:
+## Quick Reproduction
 
 ```powershell
-python -m pip install -e ".[dev]"
-python -m fromcad2cfd --help
+python -m pip install -e ".[dev,paper-validation]"
+python paper_validation/scripts/validate_claims.py --frozen
+python paper_validation/build_paper_assets.py --from-frozen
 ```
 
-Run the current FastFluent agent workflow demo:
+These Level 1 commands require only Python and rebuild the claim
+registry, Figure 3 data, Table 1 data, and Supplementary Tables S1-S3
+from compact frozen outputs.
 
-```powershell
-python -m fromcad2cfd fastcfd workflow demo `
-  --output-dir sandbox/output/fastfluent_s7_workflow_demo `
-  --mode native_advisory `
-  --format markdown
-```
+## Public Cases
 
-This writes staged workflow artifacts, optional native advisory evidence, a
-Result Pack, `workflow_manifest.json`, and `agent_decision.json`. It does not
-launch Fluent.
-
-## Public Asset Organization
-
-The public assets are split by reader need rather than by old folder history:
-
-| Reader path | Entry point | Use it for |
+| Case | Name | Role |
 | --- | --- | --- |
-| Engineering workflow | [Architecture](docs/architecture.md) | The four-block `Modeling` / `FastFluent` / `Meshing` / `Fluent` structure. |
-| Agent validation | [Agent benchmark ladder](docs/agent_benchmark_ladder/README.md) | The compact `4+1` public CFD benchmark ladder. |
-| Paper case study | [Dewaxing Agent case study](docs/dewaxing_agent/README.md) | The FastFluent-to-Fluent dewaxing route used for the paper-facing case. |
+| BM01 | Laminar channel | analytical public benchmark |
+| BM02 | Backward-facing step | TMBWG/NASA SSTm separated-flow benchmark |
+| BM03 | Heated blocked channel | public thermal-transport benchmark defined in this work |
+| BM04 | Lid-driven cavity | Re=100 public cavity benchmark |
+| RP01 | Ghia cavity reproduction | Re=100/400/1000 literature reproduction |
+| RP02 | Schaefer-Turek cylinder reproduction | DFG 2D-2 literature reproduction |
 
-The detailed rule for retaining and splitting original public GitHub assets is
-in [Public asset framework map](docs/public_asset_framework_map.md).
+The unified entry point is `paper_validation/`. The benchmark ladder
+documentation is in `docs/agent_benchmark_ladder/`.
 
-## Repository Map
+## Reproduction Levels
 
-```text
-src/
-  fromcad2cfd/                    # top-level CLI
-  fromcad2cfd_fastcfd/            # FastFluent workflow and evidence layer
-  fromcad2cfd_solidworks/         # SolidWorks automation surface
-  fromcad2cfd_nx/                 # Siemens NX automation surface
-  fromcad2cfd_hypermesh_meshing/  # HyperMesh meshing interface
-  fromcad2cfd_fluent_solver/      # Fluent solver planning interface
-  fromcad2cfd_postprocessing/     # monitor parsing and summaries
-cpp/
-  fastfluent_core/                # C++ FastFluent numerical core
-docs/
-  fastcfd/                        # FastFluent contracts and runbooks
-  agent_benchmark_ladder/         # public Agent CFD benchmark ladder
-  dewaxing_agent/                 # paper-facing dewaxing Agent case study
-examples/
-  fastcfd/                        # public FastFluent examples
-  fluent_solver/                  # public solver-plan examples
-  postprocessing/                 # public monitor/result fixtures
-tests/
-  unit/                           # Python unit tests
-```
+- Level 1, no commercial solver:
+  `python paper_validation/scripts/validate_claims.py --frozen`
+  and `python paper_validation/build_paper_assets.py --from-frozen`.
+- Level 2, FastFluent recomputation:
+  `python paper_validation/run_all.py --backend fastfluent --output paper_validation/reproduced`.
+- Level 3, optional Fluent confirmation:
+  `python paper_validation/run_all.py --backend fluent --fluent-exe <path> --output paper_validation/reproduced`.
 
-## Main Documentation
+## Industrial Data Policy
 
-- [Architecture](docs/architecture.md)
-- [Documentation index](docs/index.md)
-- [Public asset framework map](docs/public_asset_framework_map.md)
-- [FastFluent quickstart](docs/fastcfd/quickstart.md)
+The industrial steam-dewaxing study is represented here through generic
+Agent/FastFluent algorithms, public data structures, and synthetic
+examples. Real industrial geometry, meshes, commercial solver models,
+raw process histories, outlet-coordinate mappings, material calibration
+records, and restart/checkpoint files are not public because they are
+commercially confidential. Non-confidential supplementary information
+may be requested from the corresponding authors.
+
+## Documentation
+
+- [Paper reproducibility](docs/paper_reproducibility.md)
+- [Paper method mapping](docs/paper_method_mapping.md)
 - [Agent benchmark ladder](docs/agent_benchmark_ladder/README.md)
-- [Dewaxing Agent case study](docs/dewaxing_agent/README.md)
-- [FastFluent server Codex deployment runbook](docs/fastcfd/SERVER_CODEX_DEPLOYMENT_RUNBOOK.md)
-- [Fluent solver interface](docs/fluent_solver/interface_draft.md)
-- [Post-processing interface](docs/postprocessing/interface_draft.md)
-
-## Validation
-
-Run the full Python suite:
-
-```powershell
-python -m pytest
-```
-
-Latest checked local state on 2026-06-28:
-
-- Full Python suite: `424 passed`.
-- Public asset/title suite: `5 passed`.
-- Wheel build: `fromcad2cfd-0.2.0-py3-none-any.whl` built successfully through
-  a short-path `subst` workspace.
-
-Detailed benchmark, dewaxing, and FastFluent-to-Fluent evidence is kept in the
-documentation paths above instead of being repeated on this page.
-
-## Public Data Policy
-
-The public repository keeps source code, tests, public examples, synthetic
-fixtures, and documentation. It must not contain private CAD geometry,
-proprietary CAD exports, private meshes, Fluent case/data files, license files,
-machine-specific absolute paths, or generated local solver outputs.
-
-## Licensing
-
-The Python framework is published under the root Apache-2.0 license.
-
-The C++ FastFluent core retains its original GPLv3 license; see
-[`cpp/fastfluent_core/LICENSE`](cpp/fastfluent_core/LICENSE).
+- [Public asset framework map](docs/public_asset_framework_map.md)
+- [Third-party notices](THIRD_PARTY_NOTICES.md)
 
 ## Citation
 
-If you use this project in academic work, cite it using
-[CITATION.cff](CITATION.cff).
+Use [CITATION.cff](CITATION.cff). The arXiv identifier and DOI are
+intentionally left pending until assigned; do not infer or fabricate
+them from this preprint branch.
+
+## License
+
+The Python framework is published under Apache-2.0. The C++ FastFluent
+core retains its own license under `cpp/fastfluent_core`.

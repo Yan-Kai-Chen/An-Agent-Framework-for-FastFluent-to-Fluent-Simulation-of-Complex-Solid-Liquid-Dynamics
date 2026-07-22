@@ -4,17 +4,22 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fromcad2cfd"
-version = "0.2.0"
-description = "Software workspace for An Agent Framework for FastFluent-to-Fluent Simulation of Complex Solid-Liquid Dynamics."
+version = "0.3.0rc0"
+description = "An Agent Framework for FastFluent-to-Fluent Simulation of Complex Solid-Liquid Dynamics."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
-authors = [{ name = "Project Contributors" }]
-keywords = ["cad", "cfd", "solidworks", "siemens-nx", "fluent", "automation", "agent", "mcp"]
+authors = [
+  { name = "Chen YanKai", email = "chenyankai02@gmail.com" },
+  { name = "Yuan Man" },
+  { name = "Zou Ting" },
+  { name = "Xu QingYan", email = "scjxqy@tsinghua.edu.cn" },
+  { name = "Jing Tao", email = "jingtao@mail.tsinghua.edu.cn" },
+]
+keywords = ["FastFluent", "Fluent", "CFD", "solid-liquid dynamics", "agent", "paper reproducibility"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Science/Research",
-  "Intended Audience :: Manufacturing",
   "License :: OSI Approved :: Apache Software License",
   "Programming Language :: C++",
   "Programming Language :: Python :: 3",
@@ -31,6 +36,12 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8"]
 mcp = ["mcp>=1,<2"]
+paper-validation = ["pytest>=8"]
+
+[project.urls]
+Homepage = "https://github.com/Yan-Kai-Chen/An-Agent-Framework-for-FastFluent-to-Fluent-Simulation-of-Complex-Solid-Liquid-Dynamics"
+Repository = "https://github.com/Yan-Kai-Chen/An-Agent-Framework-for-FastFluent-to-Fluent-Simulation-of-Complex-Solid-Liquid-Dynamics"
+Paper = "arXiv identifier pending"
 
 [project.scripts]
 fromcad2cfd = "fromcad2cfd.cli:main"

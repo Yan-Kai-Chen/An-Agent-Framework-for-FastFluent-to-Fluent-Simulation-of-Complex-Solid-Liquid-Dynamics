@@ -1,0 +1,34 @@
+{
+  "case_id": "BM03",
+  "derived": {
+    "extension_speedup": 15.355,
+    "speedup": 1.7100311312877736,
+    "wall_time_reduction_percent": 41.521532461989175
+  },
+  "display": {
+    "headline_error": "0.1956% front error",
+    "headline_speedup": "1.710x",
+    "wall_time_reduction": "41.52%"
+  },
+  "qoi": {
+    "blocked_zone_dose_error_percent": 0.5847,
+    "clear_fastfluent_outlet_temperature_k": 399.98,
+    "clear_fluent_outlet_temperature_k": 400.0,
+    "continuous_porosity_front_x_over_l": 0.143273,
+    "corrected_mapping_front_error_percent": 0.1956,
+    "extension_dose_error_percent": 2.04279,
+    "extension_field_nrmse_per_100k_percent": 0.67613,
+    "extension_front_error_percent": 0.007786
+  },
+  "timings": {
+    "agent_route_s": 180.847,
+    "control_route_s": 309.254,
+    "extension_speedup": 15.355
+  },
+  "title": "Heated blocked channel",
+  "tolerances": {
+    "default_abs": 5e-06,
+    "percent_abs": 0.005,
+    "timing_abs_s": 0.005
+  }
+}

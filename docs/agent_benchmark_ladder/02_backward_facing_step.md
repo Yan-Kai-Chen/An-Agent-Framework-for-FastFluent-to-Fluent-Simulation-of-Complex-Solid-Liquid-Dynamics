@@ -1,29 +1,32 @@
-# Benchmark 2: Backward-Facing Step
+# BM02 Backward-facing step
 
-Status: `planned`
+SSTm turbulent 2D backward-facing-step separated flow.
 
-## Purpose
+## Status
 
-Validate that the Agent workflow can handle separated-flow evidence and
-mesh-sensitivity decisions.
+Implemented and reproducible in the public `paper_validation` layer.
 
-## Planned QoIs
+## Source
 
-- Reattachment length or reduced-order proxy.
-- Recirculation-zone area.
-- Wall shear sign-change location.
-- Pressure recovery.
-- Grid sensitivity.
+AIAA Turbulence Model Benchmarking Working Group / NASA Turbulence Modeling Resource.
 
-## Missing Work
+## Frozen Paper Values
 
-- Create public geometry/mesh fixture.
-- Choose native route or mock-to-native implementation path.
-- Define QoI extraction.
-- Add benchmark pack compiler.
-- Add tests.
+- Headline error: `0.168% reattachment deviation`
+- Speedup: `2.655x`
+- Wall-time reduction: `62.33%`
 
-## Paper Role
+## Public Route
 
-General capability benchmark. It should demonstrate separation awareness but
-should not dominate the paper.
+The case directory is
+`paper_validation/cases/BM02_backward_facing_step`. Level 1 checks read the frozen
+JSON outputs. Level 2 reruns the public FastFluent/Agent route. Level 3
+provides optional Fluent-confirmation scripts for users with a licensed
+Fluent installation.
+
+## Public-Scope Guard
+
+This page documents the public benchmark contract only. It does not publish
+private industrial CAD, private meshes, commercial solver case/data files,
+restart trees, real dewaxing outlet coordinates, or production process
+records.

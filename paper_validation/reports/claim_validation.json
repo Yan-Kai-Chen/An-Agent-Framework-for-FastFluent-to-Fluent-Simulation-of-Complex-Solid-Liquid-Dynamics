@@ -1,0 +1,331 @@
+{
+  "failed": 0,
+  "mode": "frozen",
+  "results": [
+    {
+      "case_id": "BM01",
+      "claim_id": "BM01_FASTFLUENT_L2_COARSE",
+      "quantity": "fastfluent_l2_error_coarse",
+      "recomputed_value": 0.0278,
+      "reported_value": 0.0278,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM01",
+      "claim_id": "BM01_FASTFLUENT_L2_FINE",
+      "quantity": "fastfluent_l2_error_fine",
+      "recomputed_value": 0.000434,
+      "reported_value": 0.000434,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM01",
+      "claim_id": "BM01_PROFILE_RMS",
+      "quantity": "fluent_outlet_profile_rms",
+      "recomputed_value": 0.008656,
+      "reported_value": 0.008656,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM01",
+      "claim_id": "BM01_MASS_IMBALANCE",
+      "quantity": "fluent_mass_imbalance_fraction",
+      "recomputed_value": 1.21e-07,
+      "reported_value": 1.21e-07,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM01",
+      "claim_id": "BM01_SPEEDUP",
+      "quantity": "speedup",
+      "recomputed_value": 2.59510572166528,
+      "reported_value": 2.59510572166528,
+      "status": "pass",
+      "tolerance": 0.005
+    },
+    {
+      "case_id": "BM01",
+      "claim_id": "BM01_WALL_REDUCTION",
+      "quantity": "wall_time_reduction_percent",
+      "recomputed_value": 61.465924426450734,
+      "reported_value": 61.465924426450734,
+      "status": "pass",
+      "tolerance": 0.05
+    },
+    {
+      "case_id": "BM02",
+      "claim_id": "BM02_SELECTED_XR",
+      "quantity": "selected_xr_over_h",
+      "recomputed_value": 6.489,
+      "reported_value": 6.489,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM02",
+      "claim_id": "BM02_XR_DEVIATION",
+      "quantity": "deviation_percent",
+      "recomputed_value": 0.168,
+      "reported_value": 0.168,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM02",
+      "claim_id": "BM02_CONTINUATION_MIN",
+      "quantity": "continuation_min_xr_over_h",
+      "recomputed_value": 4.576,
+      "reported_value": 4.576,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM02",
+      "claim_id": "BM02_CONTINUATION_MAX",
+      "quantity": "continuation_max_xr_over_h",
+      "recomputed_value": 7.122,
+      "reported_value": 7.122,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM02",
+      "claim_id": "BM02_SPEEDUP",
+      "quantity": "speedup",
+      "recomputed_value": 2.654824509919005,
+      "reported_value": 2.654824509919005,
+      "status": "pass",
+      "tolerance": 0.005
+    },
+    {
+      "case_id": "BM02",
+      "claim_id": "BM02_WALL_REDUCTION",
+      "quantity": "wall_time_reduction_percent",
+      "recomputed_value": 62.332726842630024,
+      "reported_value": 62.332726842630024,
+      "status": "pass",
+      "tolerance": 0.05
+    },
+    {
+      "case_id": "BM03",
+      "claim_id": "BM03_FRONT_ERROR",
+      "quantity": "corrected_mapping_front_error_percent",
+      "recomputed_value": 0.1956,
+      "reported_value": 0.1956,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM03",
+      "claim_id": "BM03_DOSE_ERROR",
+      "quantity": "blocked_zone_dose_error_percent",
+      "recomputed_value": 0.5847,
+      "reported_value": 0.5847,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM03",
+      "claim_id": "BM03_EXTENSION_SPEEDUP",
+      "quantity": "extension_speedup",
+      "recomputed_value": 15.355,
+      "reported_value": 15.355,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM03",
+      "claim_id": "BM03_EXTENSION_FIELD_NRMSE",
+      "quantity": "extension_field_nrmse_per_100k_percent",
+      "recomputed_value": 0.67613,
+      "reported_value": 0.67613,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM03",
+      "claim_id": "BM03_SPEEDUP",
+      "quantity": "speedup",
+      "recomputed_value": 1.7100311312877736,
+      "reported_value": 1.7100311312877736,
+      "status": "pass",
+      "tolerance": 0.005
+    },
+    {
+      "case_id": "BM03",
+      "claim_id": "BM03_WALL_REDUCTION",
+      "quantity": "wall_time_reduction_percent",
+      "recomputed_value": 41.521532461989175,
+      "reported_value": 41.521532461989175,
+      "status": "pass",
+      "tolerance": 0.05
+    },
+    {
+      "case_id": "BM04",
+      "claim_id": "BM04_HANDOFF_NRMSE",
+      "quantity": "handoff_nrmse",
+      "recomputed_value": 5.257e-16,
+      "reported_value": 5.257e-16,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM04",
+      "claim_id": "BM04_GHIA_RMS",
+      "quantity": "ghia_centreline_rms",
+      "recomputed_value": 0.003452,
+      "reported_value": 0.003452,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM04",
+      "claim_id": "BM04_VORTEX_DISTANCE",
+      "quantity": "vortex_centre_distance",
+      "recomputed_value": 0.006261,
+      "reported_value": 0.006261,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM04",
+      "claim_id": "BM04_FLUENT_NRMSE",
+      "quantity": "matched_fluent_velocity_nrmse",
+      "recomputed_value": 2.03e-07,
+      "reported_value": 2.03e-07,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "BM04",
+      "claim_id": "BM04_SPEEDUP",
+      "quantity": "speedup",
+      "recomputed_value": 1.2834283249638005,
+      "reported_value": 1.2834283249638005,
+      "status": "pass",
+      "tolerance": 0.005
+    },
+    {
+      "case_id": "BM04",
+      "claim_id": "BM04_WALL_REDUCTION",
+      "quantity": "wall_time_reduction_percent",
+      "recomputed_value": 22.083689400558836,
+      "reported_value": 22.083689400558836,
+      "status": "pass",
+      "tolerance": 0.05
+    },
+    {
+      "case_id": "RP01",
+      "claim_id": "RP01_BASELINE_RMS",
+      "quantity": "baseline_boundary_corrected_mean_rms",
+      "recomputed_value": 0.120715,
+      "reported_value": 0.120715,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "RP01",
+      "claim_id": "RP01_CORRECTED_RMS",
+      "quantity": "corrected_mean_rms",
+      "recomputed_value": 0.0095285,
+      "reported_value": 0.0095285,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "RP01",
+      "claim_id": "RP01_ERROR_REDUCTION",
+      "quantity": "error_reduction_percent",
+      "recomputed_value": 92.11,
+      "reported_value": 92.11,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "RP01",
+      "claim_id": "RP01_SPEEDUP",
+      "quantity": "speedup",
+      "recomputed_value": 2.512007478618982,
+      "reported_value": 2.512007478618982,
+      "status": "pass",
+      "tolerance": 0.005
+    },
+    {
+      "case_id": "RP01",
+      "claim_id": "RP01_WALL_REDUCTION",
+      "quantity": "wall_time_reduction_percent",
+      "recomputed_value": 60.19120131960089,
+      "reported_value": 60.19120131960089,
+      "status": "pass",
+      "tolerance": 0.05
+    },
+    {
+      "case_id": "RP02",
+      "claim_id": "RP02_SELECTED_ST",
+      "quantity": "selected_frequency_confirmation_st",
+      "recomputed_value": 0.29985,
+      "reported_value": 0.29985,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "RP02",
+      "claim_id": "RP02_SELECTED_ST_ERROR",
+      "quantity": "selected_frequency_error_percent",
+      "recomputed_value": 0.672,
+      "reported_value": 0.672,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "RP02",
+      "claim_id": "RP02_AMPLITUDE_HARDENED_ST",
+      "quantity": "amplitude_hardened_st",
+      "recomputed_value": 0.29994,
+      "reported_value": 0.29994,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "RP02",
+      "claim_id": "RP02_MEAN_DRAG_ERROR",
+      "quantity": "mean_drag_error_percent",
+      "recomputed_value": 2.552,
+      "reported_value": 2.552,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "RP02",
+      "claim_id": "RP02_COMPLETE_ROUTE_SPEEDUP",
+      "quantity": "complete_route_speedup",
+      "recomputed_value": 1.163,
+      "reported_value": 1.163,
+      "status": "pass",
+      "tolerance": 5e-06
+    },
+    {
+      "case_id": "RP02",
+      "claim_id": "RP02_SPEEDUP",
+      "quantity": "speedup",
+      "recomputed_value": 2.037204506659699,
+      "reported_value": 2.037204506659699,
+      "status": "pass",
+      "tolerance": 0.005
+    },
+    {
+      "case_id": "RP02",
+      "claim_id": "RP02_WALL_REDUCTION",
+      "quantity": "wall_time_reduction_percent",
+      "recomputed_value": 50.913126456820514,
+      "reported_value": 50.913126456820514,
+      "status": "pass",
+      "tolerance": 0.05
+    }
+  ],
+  "total": 36
+}

@@ -1,0 +1,27 @@
+{
+  "case_id": "BM03",
+  "derived": {
+    "extension_speedup": 15.355,
+    "speedup": 1.7100311312877736,
+    "wall_time_reduction_percent": 41.521532461989175
+  },
+  "notes": [
+    "Primary correction-stage and full-field extension metrics are reported separately.",
+    "The public definition includes 16/8/4/2/1 segment candidates and a continuous-porosity reference generator."
+  ],
+  "qoi": {
+    "blocked_zone_dose_error_percent": 0.5847,
+    "clear_fastfluent_outlet_temperature_k": 399.98,
+    "clear_fluent_outlet_temperature_k": 400.0,
+    "continuous_porosity_front_x_over_l": 0.143273,
+    "corrected_mapping_front_error_percent": 0.1956,
+    "extension_dose_error_percent": 2.04279,
+    "extension_field_nrmse_per_100k_percent": 0.67613,
+    "extension_front_error_percent": 0.007786
+  },
+  "timings": {
+    "agent_route_s": 180.847,
+    "control_route_s": 309.254,
+    "extension_speedup": 15.355
+  }
+}

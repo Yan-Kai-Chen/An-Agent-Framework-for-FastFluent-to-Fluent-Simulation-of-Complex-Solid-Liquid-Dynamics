@@ -1,0 +1,7 @@
+case_id,title,headline_error,speedup,wall_time_reduction
+BM01,Laminar channel,0.008656 outlet-profile RMS,>2.595x,>61.47%
+BM02,Backward-facing step,0.168% reattachment deviation,2.655x,62.33%
+BM03,Heated blocked channel,0.1956% front error,1.710x,41.52%
+BM04,Lid-driven cavity,0.003452 Ghia centreline RMS,1.283x,22.08%
+RP01,Ghia cavity reproduction,0.0095285 corrected mean RMS,2.512x,60.19%
+RP02,Schaefer-Turek cylinder reproduction,0.672% Strouhal error,2.037x confirmation-stage,50.91%

@@ -1,0 +1,11 @@
+{
+  "case_id": "BM04",
+  "derived": {
+    "speedup": 1.2834283249638005,
+    "wall_time_reduction_percent": 22.083689400558836
+  },
+  "timings": {
+    "agent_route_s": 162.295,
+    "control_route_s": 208.294
+  }
+}

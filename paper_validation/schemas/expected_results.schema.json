@@ -1,0 +1,12 @@
+{
+  "required": [
+    "case_id",
+    "title",
+    "qoi",
+    "timings",
+    "derived",
+    "display",
+    "tolerances"
+  ],
+  "type": "object"
+}

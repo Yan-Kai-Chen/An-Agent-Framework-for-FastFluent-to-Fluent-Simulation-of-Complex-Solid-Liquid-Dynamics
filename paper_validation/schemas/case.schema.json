@@ -1,0 +1,12 @@
+{
+  "required": [
+    "case_id",
+    "title",
+    "physics",
+    "source",
+    "inputs",
+    "agent_workflow",
+    "required_outputs"
+  ],
+  "type": "object"
+}

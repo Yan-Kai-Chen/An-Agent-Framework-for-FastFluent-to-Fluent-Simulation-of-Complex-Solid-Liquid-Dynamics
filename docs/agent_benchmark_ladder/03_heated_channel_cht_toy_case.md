@@ -1,34 +1,32 @@
-# Benchmark 3: Heated Channel / CHT Toy Case
+# BM03 Heated blocked channel
 
-Status: `partial`
+Transient thermal transport through a blocked/porosity-mapped channel.
 
-## Purpose
+## Status
 
-Validate thermal boundary handling and create a bridge toward dewaxing heat
-dose, wall heating, and phase-change interpretation.
+Implemented and reproducible in the public `paper_validation` layer.
 
-## Planned QoIs
+## Source
 
-- Wall heat flux.
-- Outlet temperature.
-- Heat dose.
-- Wall or solid temperature rise.
-- Energy-balance residual.
+Defined in this work as a public thermal-transport benchmark.
 
-## Likely Reusable Assets
+## Frozen Paper Values
 
-- S6 scalar transport routes.
-- Existing thermal/wax handoff logic.
-- Dewaxing early heat-dose metrics.
+- Headline error: `0.1956% front error`
+- Speedup: `1.710x`
+- Wall-time reduction: `41.52%`
 
-## Missing Work
+## Public Route
 
-- Decide whether this is a pure heated-channel case or a minimal conjugate
-  heat-transfer toy case.
-- Add a public fixture.
-- Add thermal QoI tables and a small figure.
-- Connect output to Fluent-facing handoff language.
+The case directory is
+`paper_validation/cases/BM03_heated_blocked_channel`. Level 1 checks read the frozen
+JSON outputs. Level 2 reruns the public FastFluent/Agent route. Level 3
+provides optional Fluent-confirmation scripts for users with a licensed
+Fluent installation.
 
-## Paper Role
+## Public-Scope Guard
 
-General thermal capability benchmark and conceptual bridge to dewaxing.
+This page documents the public benchmark contract only. It does not publish
+private industrial CAD, private meshes, commercial solver case/data files,
+restart trees, real dewaxing outlet coordinates, or production process
+records.

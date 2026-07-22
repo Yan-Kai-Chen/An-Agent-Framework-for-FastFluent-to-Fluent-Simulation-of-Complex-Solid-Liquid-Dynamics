@@ -1,0 +1,37 @@
+{
+  "case_id": "RP02",
+  "derived": {
+    "complete_route_speedup": 1.163,
+    "speedup": 2.037204506659699,
+    "wall_time_reduction_percent": 50.913126456820514
+  },
+  "display": {
+    "headline_error": "0.672% Strouhal error",
+    "headline_speedup": "2.037x confirmation-stage",
+    "wall_time_reduction": "50.91%"
+  },
+  "qoi": {
+    "adaptive_checkpoint_s": 4.0,
+    "amplitude_hardened_error_percent": 0.643,
+    "amplitude_hardened_st": 0.29994,
+    "mean_drag_error_percent": 2.552,
+    "reference_drag_range": 0.0631,
+    "reference_lift_range": 2.008,
+    "reference_mean_cd": 3.1884,
+    "reference_mean_lift": -0.0173,
+    "reference_st": 0.30188,
+    "selected_frequency_confirmation_st": 0.29985,
+    "selected_frequency_error_percent": 0.672
+  },
+  "timings": {
+    "agent_continuation_s": 639.143,
+    "complete_route_speedup": 1.163,
+    "control_route_s": 1302.065
+  },
+  "title": "Schaefer-Turek cylinder reproduction",
+  "tolerances": {
+    "default_abs": 5e-06,
+    "percent_abs": 0.005,
+    "timing_abs_s": 0.005
+  }
+}

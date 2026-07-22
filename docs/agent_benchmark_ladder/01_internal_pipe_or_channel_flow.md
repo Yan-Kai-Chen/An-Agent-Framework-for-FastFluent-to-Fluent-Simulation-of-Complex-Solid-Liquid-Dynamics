@@ -1,33 +1,32 @@
-# Benchmark 1: Internal Pipe Or Channel Flow
+# BM01 Laminar channel
 
-Status: `partial`
+Plane Poiseuille laminar channel flow.
 
-## Purpose
+## Status
 
-Validate the basic Agent/FastFluent CFD workflow for inlet, outlet, wall, pressure
-drop, and velocity-profile evidence.
+Implemented and reproducible in the public `paper_validation` layer.
 
-## Planned QoIs
+## Source
 
-- Pressure drop.
-- Mean velocity.
-- Cross-section or centerline velocity profile.
-- Mass-balance residual.
-- Mesh/time-step sensitivity label.
+Defined in this work; analytical plane-Poiseuille profile is the reference.
 
-## Likely Reusable Assets
+## Frozen Paper Values
 
-- `examples/fastcfd/channel2d_scene`
-- `examples/unstructured/channel2d.msh`
-- existing unstructured channel validation utilities
+- Headline error: `0.008656 outlet-profile RMS`
+- Speedup: `>2.595x`
+- Wall-time reduction: `>61.47%`
 
-## Missing Work
+## Public Route
 
-- Package a clean benchmark manifest.
-- Add benchmark-specific output table.
-- Add a small figure or profile plot.
-- Add public command examples.
+The case directory is
+`paper_validation/cases/BM01_laminar_channel`. Level 1 checks read the frozen
+JSON outputs. Level 2 reruns the public FastFluent/Agent route. Level 3
+provides optional Fluent-confirmation scripts for users with a licensed
+Fluent installation.
 
-## Paper Role
+## Public-Scope Guard
 
-General capability benchmark, likely concise main-text table plus supplement.
+This page documents the public benchmark contract only. It does not publish
+private industrial CAD, private meshes, commercial solver case/data files,
+restart trees, real dewaxing outlet coordinates, or production process
+records.

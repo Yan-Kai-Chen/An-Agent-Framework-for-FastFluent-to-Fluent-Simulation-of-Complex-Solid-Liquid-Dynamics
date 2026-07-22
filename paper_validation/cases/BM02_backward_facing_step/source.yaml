@@ -1,0 +1,16 @@
+{
+  "accessed": "2026-07-23",
+  "case_id": "BM02",
+  "facts": {
+    "Re_H": 36000,
+    "geometry": "2D backward-facing step with straight opposite wall",
+    "matched_sstm_reattachment_xr_over_h": 6.5,
+    "reference_mach": 0.128,
+    "upstream_momentum_thickness_reynolds": 5000
+  },
+  "public_scope": "No private industrial geometry, mesh, solver case/data, restart, ODB, or ProCAST files are included.",
+  "source": "AIAA Turbulence Model Benchmarking Working Group / NASA Turbulence Modeling Resource.",
+  "source_type": "external_reference",
+  "title": "Backward-facing step",
+  "url_or_doi": "https://tmbwg.github.io/turbmodels/backstep_val_sst.html"
+}
