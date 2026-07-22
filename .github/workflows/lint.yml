@@ -12,5 +12,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Compile source
-        run: python -m compileall src
+      - name: Parse source and public validation scripts
+        run: python -c "import ast, pathlib; [ast.parse(p.read_text(encoding='utf-8-sig'), filename=str(p)) for root in ('src', 'paper_validation', 'tests') for p in pathlib.Path(root).rglob('*.py')]"

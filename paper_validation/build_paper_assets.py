@@ -6,6 +6,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
+
+from io_utils import read_text, write_text
 
 def main() -> int:
     parser = argparse.ArgumentParser()
@@ -16,7 +19,7 @@ def main() -> int:
     # Table 1 mirrors the Figure 3 compact numerical source.
     src = ROOT / "frozen_outputs" / "figure3_data.csv"
     dst = ROOT / "frozen_outputs" / "table1_data.csv"
-    dst.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
+    write_text(dst, read_text(src, encoding="utf-8"), encoding="utf-8")
     print(f"Built paper assets from {'frozen' if args.from_frozen else 'current'} outputs.")
     return 0
 

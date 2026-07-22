@@ -7,6 +7,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
+
+from io_utils import write_text
+
 CASES = [
     "BM01_laminar_channel",
     "BM02_backward_facing_step",
@@ -33,7 +37,7 @@ def main() -> int:
             cmd.extend(["--fluent-exe", args.fluent_exe])
         completed = subprocess.run(cmd, check=True, text=True, capture_output=True)
         results.append({"case": case, "returncode": completed.returncode})
-    (out / "run_all_summary.json").write_text(json.dumps({"backend": args.backend, "results": results}, indent=2) + "\n", encoding="utf-8")
+    write_text(out / "run_all_summary.json", json.dumps({"backend": args.backend, "results": results}, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"backend": args.backend, "case_count": len(results), "output": str(out)}, indent=2))
     return 0
 

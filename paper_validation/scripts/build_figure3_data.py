@@ -1,10 +1,14 @@
 from __future__ import annotations
 
 import csv
-import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from io_utils import open_text, read_json
+
 CASES = [
     "BM01_laminar_channel",
     "BM02_backward_facing_step",
@@ -16,12 +20,11 @@ CASES = [
 
 def main() -> int:
     out = ROOT / "frozen_outputs" / "figure3_data.csv"
-    out.parent.mkdir(parents=True, exist_ok=True)
-    with out.open("w", newline="", encoding="utf-8") as f:
+    with open_text(out, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=["case_id", "headline_error", "speedup", "wall_time_reduction_percent", "display_speedup", "display_wall_reduction"])
         writer.writeheader()
         for slug in CASES:
-            data = json.loads((ROOT / "cases" / slug / "expected_results.json").read_text(encoding="utf-8"))
+            data = read_json(ROOT / "cases" / slug / "expected_results.json")
             writer.writerow({
                 "case_id": data["case_id"],
                 "headline_error": data["display"]["headline_error"],
