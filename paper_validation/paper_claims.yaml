@@ -7,7 +7,7 @@
     "rebuild_command": "python paper_validation/cases/BM01_laminar_channel/postprocess.py --frozen",
     "reported_value": 0.0278,
     "source_files": [
-      "cases/BM01_laminar_channel/frozen_outputs/qoi.json"
+      "cases/BM01_laminar_channel/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -22,7 +22,7 @@
     "rebuild_command": "python paper_validation/cases/BM01_laminar_channel/postprocess.py --frozen",
     "reported_value": 0.000434,
     "source_files": [
-      "cases/BM01_laminar_channel/frozen_outputs/qoi.json"
+      "cases/BM01_laminar_channel/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -37,7 +37,7 @@
     "rebuild_command": "python paper_validation/cases/BM01_laminar_channel/postprocess.py --frozen",
     "reported_value": 0.008656,
     "source_files": [
-      "cases/BM01_laminar_channel/frozen_outputs/qoi.json"
+      "cases/BM01_laminar_channel/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -52,7 +52,7 @@
     "rebuild_command": "python paper_validation/cases/BM01_laminar_channel/postprocess.py --frozen",
     "reported_value": 1.21e-07,
     "source_files": [
-      "cases/BM01_laminar_channel/frozen_outputs/qoi.json"
+      "cases/BM01_laminar_channel/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -67,7 +67,7 @@
     "rebuild_command": "python paper_validation/cases/BM01_laminar_channel/postprocess.py --frozen",
     "reported_value": 2.59510572166528,
     "source_files": [
-      "cases/BM01_laminar_channel/frozen_outputs/qoi.json"
+      "cases/BM01_laminar_channel/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -82,7 +82,7 @@
     "rebuild_command": "python paper_validation/cases/BM01_laminar_channel/postprocess.py --frozen",
     "reported_value": 61.465924426450734,
     "source_files": [
-      "cases/BM01_laminar_channel/frozen_outputs/qoi.json"
+      "cases/BM01_laminar_channel/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -97,7 +97,7 @@
     "rebuild_command": "python paper_validation/cases/BM02_backward_facing_step/postprocess.py --frozen",
     "reported_value": 6.489,
     "source_files": [
-      "cases/BM02_backward_facing_step/frozen_outputs/qoi.json"
+      "cases/BM02_backward_facing_step/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -112,7 +112,7 @@
     "rebuild_command": "python paper_validation/cases/BM02_backward_facing_step/postprocess.py --frozen",
     "reported_value": 0.168,
     "source_files": [
-      "cases/BM02_backward_facing_step/frozen_outputs/qoi.json"
+      "cases/BM02_backward_facing_step/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -127,7 +127,7 @@
     "rebuild_command": "python paper_validation/cases/BM02_backward_facing_step/postprocess.py --frozen",
     "reported_value": 4.576,
     "source_files": [
-      "cases/BM02_backward_facing_step/frozen_outputs/qoi.json"
+      "cases/BM02_backward_facing_step/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -142,7 +142,7 @@
     "rebuild_command": "python paper_validation/cases/BM02_backward_facing_step/postprocess.py --frozen",
     "reported_value": 7.122,
     "source_files": [
-      "cases/BM02_backward_facing_step/frozen_outputs/qoi.json"
+      "cases/BM02_backward_facing_step/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -157,7 +157,7 @@
     "rebuild_command": "python paper_validation/cases/BM02_backward_facing_step/postprocess.py --frozen",
     "reported_value": 2.654824509919005,
     "source_files": [
-      "cases/BM02_backward_facing_step/frozen_outputs/qoi.json"
+      "cases/BM02_backward_facing_step/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -172,7 +172,7 @@
     "rebuild_command": "python paper_validation/cases/BM02_backward_facing_step/postprocess.py --frozen",
     "reported_value": 62.332726842630024,
     "source_files": [
-      "cases/BM02_backward_facing_step/frozen_outputs/qoi.json"
+      "cases/BM02_backward_facing_step/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -187,7 +187,7 @@
     "rebuild_command": "python paper_validation/cases/BM03_heated_blocked_channel/postprocess.py --frozen",
     "reported_value": 0.1956,
     "source_files": [
-      "cases/BM03_heated_blocked_channel/frozen_outputs/qoi.json"
+      "cases/BM03_heated_blocked_channel/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -202,7 +202,7 @@
     "rebuild_command": "python paper_validation/cases/BM03_heated_blocked_channel/postprocess.py --frozen",
     "reported_value": 0.5847,
     "source_files": [
-      "cases/BM03_heated_blocked_channel/frozen_outputs/qoi.json"
+      "cases/BM03_heated_blocked_channel/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -217,7 +217,7 @@
     "rebuild_command": "python paper_validation/cases/BM03_heated_blocked_channel/postprocess.py --frozen",
     "reported_value": 15.355,
     "source_files": [
-      "cases/BM03_heated_blocked_channel/frozen_outputs/qoi.json"
+      "cases/BM03_heated_blocked_channel/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -232,7 +232,7 @@
     "rebuild_command": "python paper_validation/cases/BM03_heated_blocked_channel/postprocess.py --frozen",
     "reported_value": 0.67613,
     "source_files": [
-      "cases/BM03_heated_blocked_channel/frozen_outputs/qoi.json"
+      "cases/BM03_heated_blocked_channel/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -247,7 +247,7 @@
     "rebuild_command": "python paper_validation/cases/BM03_heated_blocked_channel/postprocess.py --frozen",
     "reported_value": 1.7100311312877736,
     "source_files": [
-      "cases/BM03_heated_blocked_channel/frozen_outputs/qoi.json"
+      "cases/BM03_heated_blocked_channel/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -262,7 +262,7 @@
     "rebuild_command": "python paper_validation/cases/BM03_heated_blocked_channel/postprocess.py --frozen",
     "reported_value": 41.521532461989175,
     "source_files": [
-      "cases/BM03_heated_blocked_channel/frozen_outputs/qoi.json"
+      "cases/BM03_heated_blocked_channel/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -277,7 +277,7 @@
     "rebuild_command": "python paper_validation/cases/BM04_lid_driven_cavity/postprocess.py --frozen",
     "reported_value": 5.257e-16,
     "source_files": [
-      "cases/BM04_lid_driven_cavity/frozen_outputs/qoi.json"
+      "cases/BM04_lid_driven_cavity/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -292,7 +292,7 @@
     "rebuild_command": "python paper_validation/cases/BM04_lid_driven_cavity/postprocess.py --frozen",
     "reported_value": 0.003452,
     "source_files": [
-      "cases/BM04_lid_driven_cavity/frozen_outputs/qoi.json"
+      "cases/BM04_lid_driven_cavity/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -307,7 +307,7 @@
     "rebuild_command": "python paper_validation/cases/BM04_lid_driven_cavity/postprocess.py --frozen",
     "reported_value": 0.006261,
     "source_files": [
-      "cases/BM04_lid_driven_cavity/frozen_outputs/qoi.json"
+      "cases/BM04_lid_driven_cavity/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -322,7 +322,7 @@
     "rebuild_command": "python paper_validation/cases/BM04_lid_driven_cavity/postprocess.py --frozen",
     "reported_value": 2.03e-07,
     "source_files": [
-      "cases/BM04_lid_driven_cavity/frozen_outputs/qoi.json"
+      "cases/BM04_lid_driven_cavity/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -337,7 +337,7 @@
     "rebuild_command": "python paper_validation/cases/BM04_lid_driven_cavity/postprocess.py --frozen",
     "reported_value": 1.2834283249638005,
     "source_files": [
-      "cases/BM04_lid_driven_cavity/frozen_outputs/qoi.json"
+      "cases/BM04_lid_driven_cavity/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -352,7 +352,7 @@
     "rebuild_command": "python paper_validation/cases/BM04_lid_driven_cavity/postprocess.py --frozen",
     "reported_value": 22.083689400558836,
     "source_files": [
-      "cases/BM04_lid_driven_cavity/frozen_outputs/qoi.json"
+      "cases/BM04_lid_driven_cavity/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -367,7 +367,7 @@
     "rebuild_command": "python paper_validation/cases/RP01_ghia_cavity/postprocess.py --frozen",
     "reported_value": 0.120715,
     "source_files": [
-      "cases/RP01_ghia_cavity/frozen_outputs/qoi.json"
+      "cases/RP01_ghia_cavity/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -382,7 +382,7 @@
     "rebuild_command": "python paper_validation/cases/RP01_ghia_cavity/postprocess.py --frozen",
     "reported_value": 0.0095285,
     "source_files": [
-      "cases/RP01_ghia_cavity/frozen_outputs/qoi.json"
+      "cases/RP01_ghia_cavity/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -397,7 +397,7 @@
     "rebuild_command": "python paper_validation/cases/RP01_ghia_cavity/postprocess.py --frozen",
     "reported_value": 92.11,
     "source_files": [
-      "cases/RP01_ghia_cavity/frozen_outputs/qoi.json"
+      "cases/RP01_ghia_cavity/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -412,7 +412,7 @@
     "rebuild_command": "python paper_validation/cases/RP01_ghia_cavity/postprocess.py --frozen",
     "reported_value": 2.512007478618982,
     "source_files": [
-      "cases/RP01_ghia_cavity/frozen_outputs/qoi.json"
+      "cases/RP01_ghia_cavity/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -427,7 +427,7 @@
     "rebuild_command": "python paper_validation/cases/RP01_ghia_cavity/postprocess.py --frozen",
     "reported_value": 60.19120131960089,
     "source_files": [
-      "cases/RP01_ghia_cavity/frozen_outputs/qoi.json"
+      "cases/RP01_ghia_cavity/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -442,7 +442,7 @@
     "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
     "reported_value": 0.29985,
     "source_files": [
-      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+      "cases/RP02_dfg_cylinder/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -457,7 +457,7 @@
     "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
     "reported_value": 0.672,
     "source_files": [
-      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+      "cases/RP02_dfg_cylinder/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -472,7 +472,7 @@
     "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
     "reported_value": 0.29994,
     "source_files": [
-      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+      "cases/RP02_dfg_cylinder/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -487,7 +487,7 @@
     "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
     "reported_value": 2.552,
     "source_files": [
-      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+      "cases/RP02_dfg_cylinder/frozen/qoi.json"
     ],
     "source_section": "qoi",
     "status": "reproduced",
@@ -502,7 +502,7 @@
     "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
     "reported_value": 1.163,
     "source_files": [
-      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+      "cases/RP02_dfg_cylinder/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -517,7 +517,7 @@
     "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
     "reported_value": 2.037204506659699,
     "source_files": [
-      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+      "cases/RP02_dfg_cylinder/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",
@@ -532,7 +532,7 @@
     "rebuild_command": "python paper_validation/cases/RP02_dfg_cylinder/postprocess.py --frozen",
     "reported_value": 50.913126456820514,
     "source_files": [
-      "cases/RP02_dfg_cylinder/frozen_outputs/qoi.json"
+      "cases/RP02_dfg_cylinder/frozen/qoi.json"
     ],
     "source_section": "derived",
     "status": "reproduced",

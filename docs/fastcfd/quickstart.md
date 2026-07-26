@@ -48,7 +48,7 @@ See:
 
 ```text
 docs/agent_benchmark_ladder/README.md
-examples/fastcfd/agent_benchmark_ladder/README.md
+examples/fastcfd/benchmarks/README.md
 ```
 
 ## Dewaxing Native Application Evidence

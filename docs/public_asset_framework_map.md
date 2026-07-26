@@ -12,7 +12,6 @@ framework base
   -> Agent workflow spine
   -> benchmark ladder
   -> dewaxing case study
-  -> legacy evidence and progress records
 ```
 
 ## Canonical Layers
@@ -21,10 +20,9 @@ framework base
 | --- | --- | --- |
 | Framework base | Project identity, install surface, safety policy, contribution rules, tests, and CI. | `README.md`, `pyproject.toml`, `.github/`, `configs/`, `scripts/`, `tests/` |
 | Four workflow blocks | Preserve the original public FromCAD2CFD structure: Modeling, FastFluent, Meshing, and Fluent. | `docs/architecture.md`, `docs/index.md` |
-| Agent workflow spine | Explain how the Agent moves through contracts, gates, evidence bundles, route plans, result packs, and decisions. | `docs/fastcfd/WORKFLOW_RUNNER.md`, `docs/fastcfd/AGENT_WORKFLOW_STATUS_AUDIT.md` |
-| Benchmark ladder | Show general CFD workflow breadth before the dewaxing application. | `docs/agent_benchmark_ladder/README.md`, `examples/fastcfd/agent_benchmark_ladder/` |
+| Agent workflow spine | Explain how the Agent moves through contracts, gates, evidence bundles, route plans, result packs, and decisions. | `docs/fastcfd/WORKFLOW_RUNNER.md`, `docs/fastcfd/capabilities.md` |
+| Benchmark ladder | Show general CFD workflow breadth before the dewaxing application. | `docs/agent_benchmark_ladder/README.md`, `examples/fastcfd/benchmarks/` |
 | Dewaxing case study | Show complex solid-liquid dewaxing depth and FastFluent-to-Fluent paper evidence. | `docs/dewaxing_agent/README.md`, `examples/postprocessing/dewaxing_result_pack/` |
-| Legacy evidence records | Preserve development history, capability snapshots, and milestone reports without making them primary navigation. | dated `docs/FASTFLUENT_*.md` and handoff documents |
 
 ## Asset Migration Matrix
 
@@ -42,7 +40,7 @@ framework base
 | missing backward-facing-step fixture | Benchmark 2 | Keep as `planned`. Do not fake completed numerical results. |
 | `src/fromcad2cfd_fastcfd/dewaxing_*.py` | Dewaxing case study implementation | Keep flat module layout during this transition. Consider subpackage move only after import compatibility tests are added. |
 | `src/fromcad2cfd_postprocessing/dewaxing_result_pack.py` and `examples/postprocessing/dewaxing_result_pack/` | Public dewaxing fixture and validation contract | Keep public-safe fixture in examples. Never require private Fluent paths in tests. |
-| `docs/FASTFLUENT_*.md`, `docs/DEWAXING_*.md` | Legacy evidence and handoff records | Keep as traceable source material. Summarize into landing pages before any later archiving. |
+| Dated goals, progress logs, delivery notes, audits, and handoffs | Internal development records | Keep outside the public working tree. Git history retains previously published versions when traceability is required. |
 | `sandbox/output/*`, `05_projects/*`, `06_logs/*` | Local generated evidence | Keep out of the public GitHub source tree unless a small sanitized fixture is deliberately promoted. |
 
 ## Navigation Rules
@@ -59,8 +57,9 @@ Use these rules when adding or moving public assets:
    `docs/agent_benchmark_ladder/`.
 5. If the asset supports the complex dewaxing application, map it into
    `docs/dewaxing_agent/`.
-6. If the asset is historical, dated, or progress-oriented, keep it as a legacy
-   evidence record and reference it from a newer landing page.
+6. If the asset is historical, dated, or progress-oriented, archive it outside
+   the public working tree and retain only durable conclusions in canonical
+   documentation.
 7. Do not move large generated evidence, private case/data files, private CAD,
    or machine-specific runtime outputs into the public repository.
 
@@ -72,8 +71,8 @@ A public-asset restructure is acceptable only when all of these are true:
   case study.
 - `docs/index.md` can route a new reader to framework, benchmark, and dewaxing
   material without reading dated progress files first.
-- Each benchmark page states its status as `partial`, `planned`, or
-  `application-driving`.
+- Each benchmark page states its public implementation and reproducibility
+  status without relying on internal milestone notes.
 - Dewaxing pages state that FastFluent provides reduced-order guidance and that
   Fluent evidence is retrospective confirmation or later validation.
 - Public commands use public fixtures or generated outputs, not private local

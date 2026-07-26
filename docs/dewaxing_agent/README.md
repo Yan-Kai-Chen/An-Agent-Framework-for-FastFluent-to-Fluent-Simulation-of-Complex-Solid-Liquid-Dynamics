@@ -52,7 +52,6 @@ small public figure is deliberately promoted in a later paper-asset pass.
 
 ## Documentation Pages
 
-- `00_project_tree.md`
 - `01_project_overview.md`
 - `02_evidence_inventory.md`
 - `03_fastfluent_native_solver.md`

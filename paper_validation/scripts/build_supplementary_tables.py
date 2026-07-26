@@ -19,7 +19,7 @@ CASES = [
 ]
 
 def main() -> int:
-    outdir = ROOT / "frozen_outputs" / "supplementary_tables"
+    outdir = ROOT / "frozen" / "supplementary_tables"
     rows = []
     for slug in CASES:
         data = read_json(ROOT / "cases" / slug / "expected_results.json")

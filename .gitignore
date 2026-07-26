@@ -58,14 +58,22 @@ local_config.*
 # Runtime outputs
 05_projects/
 06_logs/
-sandbox/input/*
-sandbox/output/*
-sandbox/reports/*
-sandbox/o/
-sandbox/pytest_tmp_baseline/
-!sandbox/input/.gitkeep
-!sandbox/output/.gitkeep
-!sandbox/reports/.gitkeep
+sandbox/
+/paper_validation/reproduced/
+
+# Internal work logs, dated handoffs, and release staging notes
+/ZIP_README.md
+/docs/*_GOAL_*.md
+/docs/*_PROGRESS_*.md
+/docs/*_DELIVERY_*.md
+/docs/*_HANDOFF_*.md
+/docs/*_REPLAN_*.md
+/docs/*_INVENTORY_*.md
+/docs/dewaxing_agent/00_project_tree.md
+/docs/fastcfd/AGENT_WORKFLOW_STATUS_AUDIT.md
+/docs/fastcfd/CURRENT_CAPABILITY_SNAPSHOT.md
+/docs/fastcfd/SERVER_CODEX_DEPLOYMENT_RUNBOOK.md
+/docs/fastcfd/fastfluent_baseline_*.md
 
 # OS
 .DS_Store

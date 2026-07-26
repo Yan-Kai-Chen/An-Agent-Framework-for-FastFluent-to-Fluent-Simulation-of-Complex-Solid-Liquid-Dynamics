@@ -25,7 +25,6 @@ def test_public_asset_framework_map_is_linked_from_primary_navigation():
     assert "Agent workflow spine" in asset_map
     assert "benchmark ladder" in asset_map
     assert "dewaxing case study" in asset_map
-    assert "legacy evidence" in asset_map
 
     for text in (readme, docs_index, architecture):
         assert "public_asset_framework_map.md" in text
@@ -69,11 +68,10 @@ def test_benchmark_ladder_scaffold_has_all_public_case_entries():
 
 def test_dewaxing_case_study_keeps_public_fixture_and_claim_boundary():
     dewaxing_readme = _read("docs/dewaxing_agent/README.md")
-    project_tree = _read("docs/dewaxing_agent/00_project_tree.md")
 
     assert "Public Asset Mapping" in dewaxing_readme
     assert "FastFluent is the Agent's reduced-order guidance" in dewaxing_readme
-    assert "tests/unit/test_fastcfd_dewaxing_*.py" in project_tree
+    assert "tests/unit/test_fastcfd_dewaxing_*.py" in dewaxing_readme
 
     fixture_dir = REPO_ROOT / "examples" / "postprocessing" / "dewaxing_result_pack"
     validation = validate_dewaxing_result_pack(fixture_dir)

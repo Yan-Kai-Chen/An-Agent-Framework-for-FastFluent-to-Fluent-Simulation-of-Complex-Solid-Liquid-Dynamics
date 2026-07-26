@@ -17,7 +17,7 @@ def load_expected():
 def main() -> int:
     parser = argparse.ArgumentParser(description="Postprocess frozen outputs for RP02.")
     parser.add_argument("--frozen", action="store_true", help="Read compact frozen outputs.")
-    parser.add_argument("--output", default=str(CASE_DIR / "frozen_outputs" / "qoi.json"))
+    parser.add_argument("--output", default=str(CASE_DIR / "frozen" / "qoi.json"))
     args = parser.parse_args()
     data = load_expected()
     result = {

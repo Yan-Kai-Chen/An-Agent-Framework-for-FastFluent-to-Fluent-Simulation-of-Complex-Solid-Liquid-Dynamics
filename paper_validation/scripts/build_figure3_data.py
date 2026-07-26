@@ -19,7 +19,7 @@ CASES = [
 ]
 
 def main() -> int:
-    out = ROOT / "frozen_outputs" / "figure3_data.csv"
+    out = ROOT / "frozen" / "figure3_data.csv"
     with open_text(out, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=["case_id", "headline_error", "speedup", "wall_time_reduction_percent", "display_speedup", "display_wall_reduction"])
         writer.writeheader()

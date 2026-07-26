@@ -57,9 +57,9 @@ def test_claim_validator_passes():
 def test_asset_builder_outputs_tables():
     completed = subprocess.run([sys.executable, str(PV / "build_paper_assets.py"), "--from-frozen"], cwd=ROOT, text=True, capture_output=True)
     assert completed.returncode == 0, completed.stdout + completed.stderr
-    assert exists(PV / "frozen_outputs" / "figure3_data.csv")
-    assert exists(PV / "frozen_outputs" / "table1_data.csv")
-    assert exists(PV / "frozen_outputs" / "supplementary_tables" / "S1_functional_positioning.csv")
+    assert exists(PV / "frozen" / "figure3_data.csv")
+    assert exists(PV / "frozen" / "table1_data.csv")
+    assert exists(PV / "frozen" / "supplementary_tables" / "S1_functional_positioning.csv")
 
 def test_public_scope_scan_passes():
     scan = read_json(PV / "reports" / "public_scope_scan.json")
