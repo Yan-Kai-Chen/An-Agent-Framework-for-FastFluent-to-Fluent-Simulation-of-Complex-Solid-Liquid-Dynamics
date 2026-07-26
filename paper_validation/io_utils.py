@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections.abc import Iterator
 import json
 import os
 from pathlib import Path
@@ -43,6 +44,20 @@ def write_text(path: os.PathLike[str] | str, text: str, *, encoding: str = "utf-
 def read_bytes(path: os.PathLike[str] | str) -> bytes:
     with open(long_path(path), "rb") as handle:
         return handle.read()
+
+
+def iter_files(root: os.PathLike[str] | str) -> Iterator[Path]:
+    root_path = Path(root)
+    pending = [root_path]
+    while pending:
+        current = pending.pop()
+        with os.scandir(long_path(current)) as entries:
+            for entry in entries:
+                path = current / entry.name
+                if entry.is_dir(follow_symlinks=False):
+                    pending.append(path)
+                elif entry.is_file(follow_symlinks=True):
+                    yield path
 
 
 def exists(path: os.PathLike[str] | str) -> bool:

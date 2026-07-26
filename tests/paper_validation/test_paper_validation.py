@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[2]
 PV = ROOT / "paper_validation"
 sys.path.insert(0, str(PV))
 
-from io_utils import exists, read_json, read_text
+from io_utils import exists, iter_files, read_json, read_text, write_text
 
 CASES = [
     "BM01_laminar_channel",
@@ -25,6 +25,13 @@ def test_case_contract_files_exist():
         base = PV / "cases" / slug
         for name in ["README.md", "source.yaml", "case.json", "agent_config.json", "expected_results.json", "postprocess.py", "run_fastfluent.py", "run_fluent.py"]:
             assert exists(base / name), f"{slug}/{name}"
+
+
+def test_long_path_aware_recursive_file_iteration(tmp_path):
+    target = tmp_path / "nested" / "deeper" / "payload.txt"
+    write_text(target, "payload\n")
+    assert set(iter_files(tmp_path)) == {target}
+
 
 def test_expected_results_schema_shape():
     for slug in CASES:
