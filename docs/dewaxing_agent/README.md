@@ -9,11 +9,14 @@ The dewaxing case is now positioned after the compact Agent benchmark ladder:
 benchmark ladder -> dewaxing application -> FastFluent-to-Fluent guidance
 ```
 
-## Working Title
+## Preprint
 
 ```text
-An Agent Framework for FastFluent-to-Fluent Simulation of Complex Solid-Liquid Dynamics
+FastAgent: A Physics-Aware FastFluent-to-Fluent Workflow for Rapid CFD Screening and Industrial Steam Dewaxing Design
 ```
+
+[arXiv:2611.00645](https://arxiv.org/abs/2611.00645) |
+[Paper PDF](https://arxiv.org/pdf/2611.00645)
 
 ## Current Core Evidence
 

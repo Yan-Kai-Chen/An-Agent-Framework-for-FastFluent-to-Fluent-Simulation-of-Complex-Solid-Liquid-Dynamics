@@ -1,5 +1,11 @@
 # Documentation Index
 
+The accompanying FastAgent preprint is available as
+[arXiv:2611.00645](https://arxiv.org/abs/2611.00645).
+Start with the [project overview](../README.md),
+[paper reproducibility](paper_reproducibility.md), and
+[paper method mapping](paper_method_mapping.md).
+
 This project is best read as four connected workflow blocks: `Modeling`,
 `FastFluent`, `Meshing`, and `Fluent`.
 

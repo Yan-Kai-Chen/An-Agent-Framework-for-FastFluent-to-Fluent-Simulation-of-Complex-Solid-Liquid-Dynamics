@@ -1,14 +1,35 @@
-# An Agent Framework for FastFluent-to-Fluent Simulation of Complex Solid-Liquid Dynamics
+# FastAgent
 
-This repository contains the public code and validation assets for
-**An Agent Framework for FastFluent-to-Fluent Simulation of Complex
-Solid-Liquid Dynamics**.
+[![arXiv](https://img.shields.io/badge/arXiv-2611.00645-b31b1b.svg)](https://arxiv.org/abs/2611.00645)
 
-The project exposes FastFluent core workflows, Agent route selection,
-evidence bundles, and paper-facing CFD validation cases. It is designed
-to make numerical claims traceable without publishing private industrial
-CAD, meshes, commercial solver models, restart trees, or production
-process data.
+Official code repository for **FastAgent: A Physics-Aware FastFluent-to-Fluent Workflow for Rapid CFD Screening and Industrial Steam Dewaxing Design**.
+
+[Paper](https://arxiv.org/abs/2611.00645) |
+[PDF](https://arxiv.org/pdf/2611.00645) |
+[Citation](#citation) |
+[Reproducibility](docs/paper_reproducibility.md)
+
+FastAgent is a physics-aware controller for CFD campaigns, built around
+FastFluent, a lightweight numerical engine for rapid physical screening.
+FastFluent generates fields and quantities of interest. FastAgent uses this
+evidence to select physical models, numerical resolution, simulation horizons,
+and candidates for high-fidelity confirmation. In the paper, Fluent provides
+CFD confirmation and Abaqus evaluates shell fracture. Discrepancies returned
+from these calculations guide subsequent screening and design decisions.
+
+## Results Reported in the Preprint
+
+- Across six CFD benchmark campaigns, FastAgent with FastFluent reduces
+  normalised worst-QoI error by **5.68-99.14%** and accelerates
+  decision-relevant computation by **1.53-15.36 times** relative to a matched
+  Generic Agent workflow.
+- In full-cycle steam dewaxing, the rapid route localises the risk window
+  with **81.39% fewer cell-time updates** than a fine-grid, small-time-step
+  reference, while Fluent confirms melt completion.
+- Screening **131,072 outlet layouts**, followed by selective CFD and
+  structural evaluation, identifies a six-outlet design that reduces
+  simulated crack opening by **96.0%** and connected crack extent by
+  **66.7%** relative to the original design.
 
 ## Quick Reproduction
 
@@ -18,9 +39,10 @@ python paper_validation/scripts/validate_claims.py --frozen
 python paper_validation/build_paper_assets.py --from-frozen
 ```
 
-These Level 1 commands require only Python and rebuild the claim
-registry, Figure 3 data, Table 1 data, and Supplementary Tables S1-S3
-from compact frozen outputs.
+These Level 1 commands require only Python. They validate frozen public
+benchmark outputs and rebuild the repository's benchmark summaries and
+tables. See the [reproducibility guide](docs/paper_reproducibility.md) for
+the generated files and their relation to the preprint.
 
 ## Public Cases
 
@@ -66,9 +88,22 @@ may be requested from the corresponding authors.
 
 ## Citation
 
-Use [CITATION.cff](CITATION.cff). The arXiv identifier and DOI are
-intentionally left pending until assigned; do not infer or fabricate
-them from this preprint branch.
+If this work supports your research, please cite the
+[preprint](https://arxiv.org/abs/2611.00645). GitHub's **Cite this repository**
+button uses the paper metadata in [CITATION.cff](CITATION.cff).
+
+```bibtex
+@misc{chen2026fastagent,
+  title = {{FastAgent}: A Physics-Aware {FastFluent}-to-{Fluent} Workflow for Rapid {CFD} Screening and Industrial Steam Dewaxing Design},
+  author = {Chen, YanKai and Yu, QiuHeng and Yuan, Man and Zou, Ting and Wu, Lin and He, Jian and Zhang, QiongYuan and Jing, Tao and Xu, QingYan},
+  year = {2026},
+  eprint = {2611.00645},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.AI},
+  doi = {10.48550/arXiv.2611.00645},
+  url = {https://arxiv.org/abs/2611.00645}
+}
+```
 
 ## License
 

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use this framework in academic work, please cite it using this metadata."
-title: "An Agent Framework for FastFluent-to-Fluent Simulation of Complex Solid-Liquid Dynamics"
+message: "If you use FastAgent or FastFluent in academic work, please cite the paper listed under preferred-citation."
+title: "FastAgent: A Physics-Aware FastFluent-to-Fluent Workflow for Rapid CFD Screening and Industrial Steam Dewaxing Design"
 version: "0.3.0-preprint"
 date-released: "2026-07-23"
 authors:
@@ -24,10 +24,39 @@ authors:
     affiliation: "School of Materials Science and Engineering, Tsinghua University, Beijing, China"
 license: "Apache-2.0"
 repository-code: "https://github.com/Yan-Kai-Chen/An-Agent-Framework-for-FastFluent-to-Fluent-Simulation-of-Complex-Solid-Liquid-Dynamics"
+preferred-citation:
+  type: article
+  title: "FastAgent: A Physics-Aware FastFluent-to-Fluent Workflow for Rapid CFD Screening and Industrial Steam Dewaxing Design"
+  authors:
+    - family-names: "Chen"
+      given-names: "YanKai"
+    - family-names: "Yu"
+      given-names: "QiuHeng"
+    - family-names: "Yuan"
+      given-names: "Man"
+    - family-names: "Zou"
+      given-names: "Ting"
+    - family-names: "Wu"
+      given-names: "Lin"
+    - family-names: "He"
+      given-names: "Jian"
+    - family-names: "Zhang"
+      given-names: "QiongYuan"
+    - family-names: "Jing"
+      given-names: "Tao"
+    - family-names: "Xu"
+      given-names: "QingYan"
+  year: 2026
+  journal: "arXiv"
+  doi: "10.48550/arXiv.2611.00645"
+  url: "https://arxiv.org/abs/2611.00645"
 keywords:
+  - FastAgent
   - FastFluent
   - Fluent
   - CFD
   - agent
   - solid-liquid dynamics
   - paper reproducibility
+  - multi-fidelity CFD
+  - steam dewaxing

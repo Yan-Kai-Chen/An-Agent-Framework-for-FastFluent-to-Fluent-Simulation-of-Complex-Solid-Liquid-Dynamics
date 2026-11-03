@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "fromcad2cfd"
 version = "0.3.0rc0"
-description = "An Agent Framework for FastFluent-to-Fluent Simulation of Complex Solid-Liquid Dynamics."
+description = "FastAgent: A Physics-Aware FastFluent-to-Fluent Workflow for Rapid CFD Screening and Industrial Steam Dewaxing Design."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
@@ -41,7 +41,7 @@ paper-validation = ["pytest>=8"]
 [project.urls]
 Homepage = "https://github.com/Yan-Kai-Chen/An-Agent-Framework-for-FastFluent-to-Fluent-Simulation-of-Complex-Solid-Liquid-Dynamics"
 Repository = "https://github.com/Yan-Kai-Chen/An-Agent-Framework-for-FastFluent-to-Fluent-Simulation-of-Complex-Solid-Liquid-Dynamics"
-Paper = "arXiv identifier pending"
+Paper = "https://arxiv.org/abs/2611.00645"
 
 [project.scripts]
 fromcad2cfd = "fromcad2cfd.cli:main"

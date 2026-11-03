@@ -7,7 +7,7 @@ from fromcad2cfd_postprocessing.dewaxing_result_pack import validate_dewaxing_re
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-FINAL_PROJECT_TITLE = "An Agent Framework for FastFluent-to-Fluent Simulation of Complex Solid-Liquid Dynamics"
+FINAL_PROJECT_TITLE = "FastAgent: A Physics-Aware FastFluent-to-Fluent Workflow for Rapid CFD Screening and Industrial Steam Dewaxing Design"
 
 
 def _read(relative: str) -> str:

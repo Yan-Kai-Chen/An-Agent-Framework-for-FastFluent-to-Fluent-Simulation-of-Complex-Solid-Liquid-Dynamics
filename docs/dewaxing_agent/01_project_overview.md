@@ -1,14 +1,14 @@
 # Dewaxing Agent Project Overview
 
-Status: `active case-study guide`
+Status: documentation accompanying [arXiv:2611.00645](https://arxiv.org/abs/2611.00645).
 
 The dewaxing application is the complex case study that follows the compact
 Agent benchmark ladder.
 
-Working paper title:
+Preprint title:
 
 ```text
-An Agent Framework for FastFluent-to-Fluent Simulation of Complex Solid-Liquid Dynamics
+FastAgent: A Physics-Aware FastFluent-to-Fluent Workflow for Rapid CFD Screening and Industrial Steam Dewaxing Design
 ```
 
 ## Contribution
